@@ -4,6 +4,7 @@
   "description": "webassembly demos",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack -w --config webpack.config.js",
     "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,9 +20,13 @@
   },
   "homepage": "https://github.com/yucopowo/webassembly-demos#readme",
   "devDependencies": {
+    "text-loader": "^0.0.1",
     "walt-compiler": "^0.20.0",
     "walt-loader": "^1.1.11",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "cmark-emscripten": "^0.1.0"
   }
 }

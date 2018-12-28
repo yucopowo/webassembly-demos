@@ -1,0 +1,17 @@
+export function decrement(): i32 {
+    let counter: i32 = 0;
+    counter -= 1;
+    return counter;
+}
+
+export function increment(): i32 {
+    let counter: i32 = 0;
+    counter += 1;
+    return counter;
+}
+
+export const memory : Memory = { initial: 1 };
+
+export function parse(): i32 {
+    return '====== hello';
+}

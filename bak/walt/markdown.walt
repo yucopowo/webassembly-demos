@@ -1,0 +1,19 @@
+export const memory : Memory = { initial: 1 };
+
+const HEAP_START: i32 = 65536;
+
+export function parse(): i32 {
+
+    let i: i32 = 0;
+
+    const text: i32 = '# h1';
+
+    const data: i32[] = HEAP_START;
+
+    for (i = 0; i < text.length; i += 1) {
+
+    }
+
+    // return "_abc===";
+    // return '====== hello';
+}
