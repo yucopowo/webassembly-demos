@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    mode: 'none',
+    mode: 'none', // mode: 'production',
     resolve: {
         extensions: [".walt",".js"]
     },
@@ -11,8 +11,7 @@ module.exports = {
             { test: /\.md$/, use: 'text-loader' }
         ]
     },
-    entry: './src/test.js',
-    // mode: 'production',
+    entry: './src/index.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')

@@ -1,5 +1,5 @@
-const cmark = require('cmark-emscripten')
-const md = require('./test.md');
+const cmark = require('cmark-emscripten');
+const md = require('./index.md');
 
 async function parse(text) {
     console.time('cmark');
@@ -16,16 +16,6 @@ function render(html) {
 }
 
 (async function () {
-
-    await parse(md);
-    await parse(md);
-    await parse(md);
-    await parse(md);
-
     const html = await parse(md);
-
-
     render(html);
-
-
 })();
