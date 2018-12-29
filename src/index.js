@@ -3,7 +3,11 @@ const md = require('./index.md');
 
 async function parse(text) {
     console.time('cmark');
-    const html = await cmark.toHTML(md);
+    const html = await cmark.toHTML(md, {
+        sourcepos: true,
+        hardbreaks: true,
+        nobreaks: false,
+    });
     console.timeEnd('cmark');
     return html;
 }

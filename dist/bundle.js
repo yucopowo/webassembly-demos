@@ -93,7 +93,14 @@ const md = __webpack_require__(7);
 
 async function parse(text) {
     console.time('cmark');
-    const html = await cmark.toHTML(md);
+
+    const html = await cmark.toHTML(md, {
+        sourcepos: true,
+        hardbreaks: true,
+        nobreaks: false,
+        smart: true,
+    });
+    debugger
     console.timeEnd('cmark');
     return html;
 }
